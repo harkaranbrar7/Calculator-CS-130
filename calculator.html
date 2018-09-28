@@ -12,35 +12,35 @@
 
 <body>
     <div>
-    <input type="text" class="calculator-screen" value="0" disabled />
+    <input type="text" id="topDisplay" class="calculator-screen" value="0" disabled />
     </div>
     <div>
-    <input type="text" class="calculator-screen" value="0" disabled />
+    <input type="text" id="bottomDisplay" class="calculator-screen" value="0" disabled />
     </div>
     <div>
     <table>
         <tbody>
             <tr>
-                <td><button>CE</button></td>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>+</button></td>
-                <td><button>-</button></td>
+                <td><button onclick="clearTopBottom();">CE</button></td>
+                <td><button onclick="updateTopDisplay(7);updateBottomDisplay(7);">7</button></td>
+                <td><button onclick="updateTopDisplay(8);updateBottomDisplay(8);">8</button></td>
+                <td><button onclick="updateTopDisplay(9);updateBottomDisplay(9);">9</button></td>
+                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('+');">+</button></td>
+                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('-');">-</button></td>
             </tr>
             <tr>
-                <td><button>+/-</button></td>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>-</button></td>
-                <td><button>/</button></td>
+                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('');">+/-</button></td>
+                <td><button onclick="updateTopDisplay(4);updateBottomDisplay(4);">4</button></td>
+                <td><button onclick="updateTopDisplay(5);updateBottomDisplay(5);">5</button></td>
+                <td><button onclick="updateTopDisplay(6);updateBottomDisplay(6);">6</button></td>
+                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('*');">*</button></td>
+                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('/');">/</button></td>
             </tr>
             <tr>
-                <td><button>0</button></td>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
+                <td><button onclick="updateTopDisplay(0);updateBottomDisplay(0);">0</button></td>
+                <td><button onclick="updateTopDisplay(1);updateBottomDisplay(1);">1</button></td>
+                <td><button onclick="updateTopDisplay(2);updateBottomDisplay(2);">2</button></td>
+                <td><button onclick="updateTopDisplay(3);updateBottomDisplay(3);">3</button></td>
                 <td colspan="2"><button style="width:200px">=</button></td>
             </tr>
         </tbody>
