@@ -8,42 +8,74 @@
     <title>Calculator</title>
     <script type="text/javascript"  src="calculator.js"></script>
     <link rel="stylesheet" href="calculator.css">
+    <style>
+    input {
+        width: 50px;
+        height:50px;
+    }
+    .top-boxes {
+        width: 200px;
+        height:20px;
+        margin:10px;
+    }
+    #equal-sign{
+        width:105px;
+    }
+    
+    </style>
+
+
 </head>
 
 <body>
-    <div id="display">
-    <textarea id></textarea>
-    </div>
+    <form name="calc">
+        <input class="top-boxes" type="textfield" name="final-ans" value="">
+        <br>
+    
+        <input class="top-boxes" type="textfield" name="ans" value="">
+
+        
+        
+   
     <div>
     <table>
         <tbody>
             <tr>
-                <td><button>CE</button></td>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>+</button></td>
-                <td><button>-</button></td>
+                <td id="clear"><input type="button" value="CE" onclick="document.calc.ans.value='0'"></td>
+                <td><input type="button" value="7" onclick="document.calc.ans.value+='7'"></td>
+                <td><input type="button" value="8" onclick="document.calc.ans.value+='8'"></td>
+                <td><input type="button" value="9" onclick="document.calc.ans.value+='9'"></td>
+                <td><input type="button" value="+" onclick="document.calc.ans.value+='+'"></td>
+                <td><input type="button" value="*" onclick="document.calc.ans.value+='*'"></td>
             </tr>
             <tr>
-                <td><button>+/-</button></td>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>-</button></td>
-                <td><button>/</button></td>
+                <td><input id="negative"type="button" value="+/-" onclick="document.calc.ans.value+='+/-'"></td>
+                <td><input type="button" value="4" onclick="document.calc.ans.value+='4'"></td>
+                <td><input type="button" value="5" onclick="document.calc.ans.value+='5'"></td>
+                <td><input type="button" value="6" onclick="document.calc.ans.value+='6'"></td>
+                <td><input type="button" value="-" onclick="document.calc.ans.value+='-'"></td>
+                <td><input type="button" value="/" onclick="document.calc.ans.value+='/'"></td>
             </tr>
             <tr>
-                <td><button>0</button></td>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
-                <td colspan="2"><button style="width:200px">=</button></td>
+                <td><input type="button" value="0" onclick="document.calc.ans.value+='0'"></td>
+                <td><input type="button" value="1" onclick="document.calc.ans.value+='1'"></td>
+                <td><input type="button" value="2" onclick="document.calc.ans.value+='2'"></td>
+                <td><input type="button" value="3" onclick="document.calc.ans.value+='3'"></td>
+                <td colspan="2"><input id="equal-sign"type="button" value="=" onclick="document.calc.ans.value+='='"></td>
             </tr>
         </tbody>
 
     </table>
 </div>
+</form>
+
+<script>
+    function negOrPos(){
+        if(document.getElementsByName("ans"))
+    }
+
+
+</script>
 
 </body>
 
