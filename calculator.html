@@ -21,27 +21,27 @@
     <table>
         <tbody>
             <tr>
-                <td><button onclick="clearTopBottom();">CE</button></td>
-                <td><button onclick="updateTopDisplay(7);updateBottomDisplay(7);">7</button></td>
-                <td><button onclick="updateTopDisplay(8);updateBottomDisplay(8);">8</button></td>
-                <td><button onclick="updateTopDisplay(9);updateBottomDisplay(9);">9</button></td>
-                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('+');">+</button></td>
-                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('-');">-</button></td>
+                <td><button onclick="clearTopBottom()">CE</button></td>
+                <td><button onclick="buttonClick(7)">7</button></td>
+                <td><button onclick="buttonClick(8)">8</button></td>
+                <td><button onclick="buttonClick(9)">9</button></td>
+                <td><button onclick="buttonClick(add)">+</button></td>
+                <td><button onclick="buttonClick(sub)">-</button></td>
             </tr>
             <tr>
-                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('');">+/-</button></td>
-                <td><button onclick="updateTopDisplay(4);updateBottomDisplay(4);">4</button></td>
-                <td><button onclick="updateTopDisplay(5);updateBottomDisplay(5);">5</button></td>
-                <td><button onclick="updateTopDisplay(6);updateBottomDisplay(6);">6</button></td>
-                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('*');">*</button></td>
-                <td><button onclick="updateTopDisplay(0);updateBottomDisplay('/');">/</button></td>
+                <td><button onclick="buttonClick(sign);">+/-</button></td>
+                <td><button onclick="buttonClick(4)">4</button></td>
+                <td><button onclick="buttonClick(5)">5</button></td>
+                <td><button onclick="buttonClick(6)">6</button></td>
+                <td><button onclick="buttonClick(mul)">*</button></td>
+                <td><button onclick="buttonClick(div)">/</button></td>
             </tr>
             <tr>
-                <td><button onclick="updateTopDisplay(0);updateBottomDisplay(0);">0</button></td>
-                <td><button onclick="updateTopDisplay(1);updateBottomDisplay(1);">1</button></td>
-                <td><button onclick="updateTopDisplay(2);updateBottomDisplay(2);">2</button></td>
-                <td><button onclick="updateTopDisplay(3);updateBottomDisplay(3);">3</button></td>
-                <td colspan="2"><button style="width:200px">=</button></td>
+                <td><button onclick="buttonClick(0)">0</button></td>
+                <td><button onclick="buttonClick(1)">1</button></td>
+                <td><button onclick="buttonClick(2)">2</button></td>
+                <td><button onclick="buttonClick(3)">3</button></td>
+                <td colspan="2"><button style="width:200px" onclick="buttonClick(eqls)">=</button></td>
         </tbody>
 
     </table>

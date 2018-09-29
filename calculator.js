@@ -57,7 +57,10 @@ function updateBottomDisplay(stringInput) {
 
 function buttonClick(input){
 
-    console.log(input);
+    let inputChar = input.tostring();
+
+    updateTopDisplay(input);
+    updateBottomDisplay(input);
   if (inputChar == '+' || inputChar == '/' || inputChar == '-' || inputChar == 'x' || inputChar == '=')
   {
     calculation(inputchar);
