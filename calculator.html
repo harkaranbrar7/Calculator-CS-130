@@ -6,46 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculator</title>
-    <script type="text/javascript"  src="calculator.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
     <link rel="stylesheet" href="calculator.css">
 </head>
 
 <body>
     <div>
-    <input type="text" id="topDisplay" class="calculator-screen" value="0" disabled />
+        <input type="text" id="topDisplay" class="calculator-screen" value="0" disabled />
     </div>
     <div>
-    <input type="text" id="bottomDisplay" class="calculator-screen" value="0" disabled />
+        <input type="text" id="bottomDisplay" class="calculator-screen" value="0" disabled />
     </div>
     <div>
-    <table>
-        <tbody>
-            <tr>
-                <td><button onclick="clearTopBottom()">CE</button></td>
-                <td><button onclick="buttonClick(7)">7</button></td>
-                <td><button onclick="buttonClick(8)">8</button></td>
-                <td><button onclick="buttonClick(9)">9</button></td>
-                <td><button onclick="buttonClick(add)">+</button></td>
-                <td><button onclick="buttonClick(sub)">-</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="buttonClick(sign);">+/-</button></td>
-                <td><button onclick="buttonClick(4)">4</button></td>
-                <td><button onclick="buttonClick(5)">5</button></td>
-                <td><button onclick="buttonClick(6)">6</button></td>
-                <td><button onclick="buttonClick(mul)">*</button></td>
-                <td><button onclick="buttonClick(div)">/</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="buttonClick(0)">0</button></td>
-                <td><button onclick="buttonClick(1)">1</button></td>
-                <td><button onclick="buttonClick(2)">2</button></td>
-                <td><button onclick="buttonClick(3)">3</button></td>
-                <td colspan="2"><button style="width:200px" onclick="buttonClick(eqls)">=</button></td>
-        </tbody>
+        <table>
+            <tbody>
+                <tr>
+                    <td><button onclick="clearTopBottom()">CE</button></td>
+                    <td><button onclick="buttonClick(7)">7</button></td>
+                    <td><button onclick="buttonClick(8)">8</button></td>
+                    <td><button onclick="buttonClick(9)">9</button></td>
+                    <td><button onclick="buttonClick('add')">+</button></td>
+                    <td><button onclick="buttonClick('sub')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="buttonClick('sign')">+/-</button></td>
+                    <td><button onclick="buttonClick(4)">4</button></td>
+                    <td><button onclick="buttonClick(5)">5</button></td>
+                    <td><button onclick="buttonClick(6)">6</button></td>
+                    <td><button onclick="buttonClick('mul')">*</button></td>
+                    <td><button onclick="buttonClick('div')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="buttonClick(0)">0</button></td>
+                    <td><button onclick="buttonClick(1)">1</button></td>
+                    <td><button onclick="buttonClick(2)">2</button></td>
+                    <td><button onclick="buttonClick(3)">3</button></td>
+                    <td colspan="2"><button style="width:205px" onclick="buttonClick('eqls')">=</button></td>
+            </tbody>
 
-    </table>
-</div>
+        </table>
+    </div>
 
 </body>
 
